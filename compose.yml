@@ -1,0 +1,12 @@
+services:
+  gdal:
+    container_name: gdal
+    build:
+      context: .
+    volumes:
+      - ./data:/data:rw
+      - ./datasets:/datasets:rw
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_ENDPOINT_URL=${S3_ENDPOINT_URL}
