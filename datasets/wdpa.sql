@@ -1,5 +1,3 @@
-SET threads = 2;
-SET preserve_insertion_order=false;
 INSTALL spatial;
 INSTALL httpfs;
 LOAD spatial;
